@@ -10,7 +10,7 @@ Melakukan *setting up* database *world*
 mysql> SOURCE C:/temp/world.sql;
 ```
 
-Catatan: Proses *setting up* bisa dilihat melalui [Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
+Catatan: Proses *setting up* bisa dilihat melalui [MySQL :: Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
 
 Menggunakan database *world*
 ```bash
