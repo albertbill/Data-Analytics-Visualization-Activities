@@ -10,7 +10,7 @@ C:\Users\>mysql.exe --user=root
 mysql> SOURCE C:/temp/world.sql;
 ```
 
-📄📄 Panduan *setting up* database *world* bisa dilihat melalui [MySQL :: Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
+📄📄 Panduan *setting up* database *world* bisa dilihat melalui [MySQL/Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
 
 - Menggunakan database *world*
 ```bash
