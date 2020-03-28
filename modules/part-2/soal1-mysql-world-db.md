@@ -1,6 +1,6 @@
 # Membuat beberapa query pada database *world* menggunakan MySQL
 
-- Mengaktifkan sql.
+- Mengaktifkan sql
 ```bash
 C:\Users\>mysql.exe --user=root
 ```
