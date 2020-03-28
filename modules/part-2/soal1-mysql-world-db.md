@@ -1,18 +1,18 @@
 # Membuat beberapa query pada database *world* menggunakan MySQL
 
-Mengaktifkan sql.
+* Mengaktifkan sql.
 ```bash
 C:\Users\>mysql.exe --user=root
 ```
 
-Melakukan *setting up* database *world*
+* Melakukan *setting up* database *world*
 ```bash
 mysql> SOURCE C:/temp/world.sql;
 ```
 
 Catatan: Panduan *setting up* database *world* bisa dilihat melalui [MySQL :: Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
 
-Menggunakan database *world*
+* Menggunakan database *world*
 ```bash
 mysql> USE world;
 ```
