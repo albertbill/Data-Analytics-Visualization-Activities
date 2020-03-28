@@ -73,7 +73,7 @@ mysql> SELECT countrylanguage.CountryCode AS countrycode, country.Name AS name, 
     -> LIMIT 10;
 ```
 
-6. Menampilkan **daftar negara ASEAN beserta populasi negaranya, Pendapatan Nasional Bruto/GNP (Gross National Product), ibukota & populasi ibukota**.
+7. Menampilkan **daftar negara ASEAN beserta populasi negaranya, Pendapatan Nasional Bruto/GNP (Gross National Product), ibukota & populasi ibukota**.
 ```bash
 mysql> SELECT country.Name AS Negara_ASEAN, country.Population AS Populasi_Negara, country.GNP AS GNP, city.Name AS Ibukota_Negara, city.Population AS Populasi_Ibukota
     -> FROM country
