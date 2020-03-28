@@ -132,7 +132,7 @@ mysql> SELECT courses.course, courses.mentor, courses.title, COUNT(users.usernam
 
 8. Menampilkan total fee untuk setiap mentor dengan besaran fee per peserta Rp. 2.000.000,-
 ```bash
-mysql> SELECT courses.course, courses.mentor, courses.title, COUNT(users.username) AS jumlah_peserta
+mysql> SELECT courses.course, courses.mentor, courses.title, COUNT(users.username)*2000000 AS jumlah_peserta
     -> FROM users JOIN userCourse
     -> ON users.id = userCourse.id_user
     -> JOIN courses
