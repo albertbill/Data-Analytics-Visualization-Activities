@@ -1,11 +1,5 @@
 # Membuat beberapa query pada database *world* menggunakan MySQL
 
-- Dashes work just as well
-- And if you have sub points, put two spaces before the dash or star:
-  - Like this
-  - And this
-
-
 - Mengaktifkan sql.
 ```bash
 C:\Users\>mysql.exe --user=root
@@ -15,7 +9,6 @@ C:\Users\>mysql.exe --user=root
 ```bash
 mysql> SOURCE C:/temp/world.sql;
 ```
-
   - Catatan: Panduan *setting up* database *world* bisa dilihat melalui [MySQL :: Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
 
 - Menggunakan database *world*
