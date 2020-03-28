@@ -6,6 +6,7 @@ C:\Users\>mysql.exe --user=root
 ```
 
 Melakukan *setting up* database *world*
+
 Proses *setting up* bisa dilihat melalui: [Setting Up the World Database](https://dev.mysql.com/doc/world-setup/en/)
 
 Menggunakan database *world*
