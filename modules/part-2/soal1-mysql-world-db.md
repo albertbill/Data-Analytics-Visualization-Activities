@@ -92,3 +92,31 @@ mysql> SELECT country.Name AS Negara_ASEAN, country.Population AS Populasi_Negar
     -> OR city.ID = 3770
     -> ORDER BY Negara_ASEAN;
 ```
+
+8. Menampilkan **daftar negara G20 beserta populasi negaranya, Pendapatan Nasional Bruto/GNP (Gross National Product), ibukota & populasi ibukota**.
+```bash
+mysql> SELECT country.Name AS Negara_G20, country.Population AS Populasi_Negara, country.GNP AS GNP, city.Name AS Ibukota, city.Population AS Populasi_Ibukota
+    -> FROM country
+    -> JOIN city
+    -> ON  country.Capital = city.ID
+    -> WHERE city.ID = 69
+    -> OR city.ID = 135
+    -> OR city.ID = 211
+    -> OR city.ID = 1822
+    -> OR city.ID = 1891
+    -> OR city.ID = 2974
+    -> OR city.ID = 3068
+    -> OR city.ID = 1109
+    -> OR city.ID = 939
+    -> OR city.ID = 1464
+    -> OR city.ID = 1532
+    -> OR city.ID = 2515
+    -> OR city.ID = 3580
+    -> OR city.ID = 3173
+    -> OR city.ID = 716
+    -> OR city.ID = 2331
+    -> OR city.ID = 3358
+    -> OR city.ID = 456
+    -> OR city.ID = 3813
+    -> ORDER BY Negara_G20;
+```
