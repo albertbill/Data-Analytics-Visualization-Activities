@@ -68,7 +68,7 @@ Successfully added user: { "user" : "budi", "roles" : [ "readWrite" ] }
 ```
 
 ## Code (Visualisasi Database *Kampus*)
-
+```python
 import pymongo as p
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -88,3 +88,4 @@ plt.title("Usia Warga Kampus")
 plt.legend(["Dosen", "Mahasiswa"])
 plt.grid()
 plt.show()
+```
