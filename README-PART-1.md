@@ -4,7 +4,8 @@
 
 Repositori ini berisi jawaban dari soal Data Analytics Visualization 🚀
 
-Soal: :notebook_with_decorative_cover: [Data Analytics & Visualization Exam (https://github.com/LintangWisesa/Ujian_AnalyticsVisualization_JCDS03.git)
+Soal: 
+- 📔 [Data Analytics & Visualization Exam] (https://github.com/LintangWisesa/Ujian_AnalyticsVisualization_JCDS03.git)
 
 Jawaban:
 - 💪 [[**Exercises 1**] Membuat sebuah database *sekolahku* menggunakan MySql](modules/part-1/soal1-mysql-school-db.md)
