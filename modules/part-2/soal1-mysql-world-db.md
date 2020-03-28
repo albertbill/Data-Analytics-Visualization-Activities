@@ -52,7 +52,7 @@ mysql> SELECT Continent AS benua, COUNT(Continent) AS Jumlah_Negara, SUM(Populat
     -> ORDER BY Populasi DESC;
 ```
 
-5. Tampilkan daftar **negara-negara Asia yang memiliki angka harapan hidup lebih dari rata-rata angka harapan hidup negara-negara Eropa**.
+5. Menampilkan daftar **negara-negara Asia yang memiliki angka harapan hidup lebih dari rata-rata angka harapan hidup negara-negara Eropa**.
 ```bash
 mysql> SELECT Name AS Nama, Continent AS Benua, LifeExpectancy AS AngkaHrpnHdp, GNP
     -> FROM country
@@ -60,4 +60,15 @@ mysql> SELECT Name AS Nama, Continent AS Benua, LifeExpectancy AS AngkaHrpnHdp, 
     -> FROM country
     -> WHERE Continent = "Europe")
     -> ORDER BY AngkaHrpnHdp DESC;
+```
+
+6. Menampilkan **daftar 10 negara yang bahasa resminya (official language) adalah bahasa Inggris, dan memiliki persentase pengguna bahasa Inggris tertinggi di dunia**.
+```bash
+mysql> SELECT countrylanguage.CountryCode AS countrycode, country.Name AS name, countrylanguage.Language AS language, countrylanguage.IsOfficial as isOfficial, countrylanguage.Percentage as percentage
+    -> FROM countrylanguage
+    -> JOIN country
+    -> ON countrylanguage.CountryCode = country.Code
+    -> WHERE countrylanguage.language = "English" AND countrylanguage.isOfficial = "T"
+    -> ORDER BY percentage DESC
+    -> LIMIT 10;
 ```
