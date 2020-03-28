@@ -1,5 +1,11 @@
 # Membuat beberapa query pada database *world* menggunakan MySQL
 
+- Dashes work just as well
+- And if you have sub points, put two spaces before the dash or star:
+  - Like this
+  - And this
+
+
 - Mengaktifkan sql.
 ```bash
 C:\Users\>mysql.exe --user=root
