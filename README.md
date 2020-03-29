@@ -6,3 +6,4 @@ Repositori ini dibagi ke dalam beberapa bagian, di mana setiap bagiannya memilik
 
 ### [Data Analytics Visualization Activities Part 1](./README-PART-1.md)
 ### [Data Analytics Visualization Activities Part 2](./README-PART-2.md)
+### [Data Analytics Visualization Activities Part 3](./README-PART-3.md)
