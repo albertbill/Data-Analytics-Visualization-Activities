@@ -34,10 +34,8 @@ plt.title("Populasi Negara ASEAN")
 plt.xticks(rotation=60)
 plt.xlabel("Negara")
 plt.ylabel("Populasi (x100 juta jiwa)")
-
 for i, j in enumerate(df["Population"]):
     plt.text(i-.35, j, str(j), color="black", fontsize=10)
-
 plt.tight_layout()
 plt.show()
 # -----------------------------------------------------------------------------------------
@@ -59,6 +57,8 @@ plt.title("Pendapatan Bruto Nasional ASEAN")
 plt.xticks(rotation=60)
 plt.xlabel("Negara")
 plt.ylabel("Gross National Product ($)")
+for i, j in enumerate(df2["GNP"]):
+    plt.text(i-.35, j, str(j), color="black", fontsize=10)
 plt.tight_layout()
 plt.show()
 # -----------------------------------------------------------------------------------------
