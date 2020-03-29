@@ -1,16 +1,16 @@
 # Membuat database *sekolahku* menggunakan MySQL
 
-- Mengaktifkan sql.
+- Mengaktifkan sql
 ```bash
 C:\Users\>mysql.exe --user=root
 ```
 
-- Membuat database sekolahku.
+- Membuat database sekolahku
 ```bash
 mysql> CREATE database sekolahku;
 ```
 
-- Menggunakan database sekolahku.
+- Menggunakan database sekolahku
 ```bash
 mysql> USE sekolahku;
 ```
