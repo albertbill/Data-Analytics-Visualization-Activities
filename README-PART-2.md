@@ -9,3 +9,4 @@ Soal:
 
 Jawaban:
 - 💪 [[**Exercises 1**] Membuat beberapa query pada database *world* menggunakan MySql](modules/part-2/soal1-mysql-world-db.md)
+- 💪 [[**Exercises 2**] Menampilkan infografis ASEAN](modules/part-2/soal2-asean.py)
