@@ -37,7 +37,7 @@ myFmt = mdates.DateFormatter('%d-%m-%Y')
 plt.subplot().xaxis.set_major_formatter(myFmt)
 plt.tight_layout()
 plt.show()
-# -------------------------------------Soal Nomor 1----------------------------------------
+# -----------------------------------------------------------------------------------------
 
 # -------------------------------------Soal Nomor 2----------------------------------------
 xl_apr = data_xl[(data_xl["Date"] > "2019-03-29") &
@@ -72,3 +72,4 @@ myFmt = mdates.DateFormatter('%d-%m-%Y')
 plt.subplot().xaxis.set_major_formatter(myFmt)
 plt.tight_layout()
 plt.show()
+# -----------------------------------------------------------------------------------------
