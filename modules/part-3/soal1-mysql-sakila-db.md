@@ -61,4 +61,15 @@ mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaS
     -> GROUP BY film.rating
     -> ORDER BY rating;
     ```
-              
+4. Menampilkan daftar **10 aktor/aktris yang paling banyak membintangi film**.
+```bash
+mysql> SELECT actor.actor_id, actor.first_name, actor.last_name, COUNT(film.film_id) AS jumlah_movie
+    -> FROM film
+    -> JOIN film_actor
+    -> ON film.film_id = film_actor.film_id
+    -> JOIN actor
+    -> ON actor.actor_id = film_actor.actor_id
+    -> GROUP BY actor.actor_id
+    -> ORDER BY jumlah_movie DESC
+    -> LIMIT 10;
+```
