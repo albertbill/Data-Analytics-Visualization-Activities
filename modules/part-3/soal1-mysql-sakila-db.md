@@ -36,4 +36,5 @@ mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaS
 ```
 
 1. A numbered list
-              1. A nested numbered list
+    1. A nested numbered list
+              
