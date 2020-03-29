@@ -35,6 +35,19 @@ mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaS
     -> ORDER BY jumlahMovie DESC;
 ```
 
-1. A numbered list
+1. Tampilkan daftar lengkap rating film beserta keterangan arti rating & jumlah film tiap rating
     1. A nested numbered list
+    ```bash
+    mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaSewa
+        -> FROM film_list
+        -> GROUP BY category
+        -> ORDER BY jumlahMovie DESC;
+    ```
+    2. ABCDEF
+    ```bash
+    mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaSewa
+        -> FROM film_list
+        -> GROUP BY category
+        -> ORDER BY jumlahMovie DESC;
+    ```
               
