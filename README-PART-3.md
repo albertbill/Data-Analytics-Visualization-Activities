@@ -8,4 +8,4 @@ Soal:
 - 📔 [Data Analytics & Visualization Exam 3](https://github.com/LintangWisesa/Ujian_AnalyticsVisualization_JCDS07)
 
 Jawaban:
-- 💪 [[**Exercises 1**] Membuat beberapa query pada database *world* menggunakan MySql](modules/part-3/soal1-mysql-sakila-db.md)
+- 💪 [[**Exercises 1**] Membuat beberapa query pada database *sakila* menggunakan MySql](modules/part-3/soal1-mysql-sakila-db.md)
