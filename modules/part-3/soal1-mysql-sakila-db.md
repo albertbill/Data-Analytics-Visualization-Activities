@@ -11,7 +11,7 @@ mysql> SOURCE C:/temp/sakila-db/sakila-schema.sql;
 mysql> SOURCE C:/temp/sakila-db/sakila-data.sql;
 ```
 
-📌 Panduan *setting up* database *world* bisa dilihat melalui [MySQL: Setting Up the world Database](https://dev.mysql.com/doc/sakila/en/sakila-installation.html)
+📌 Panduan *setting up* database *sakila* bisa dilihat melalui [MySQL: Sakila Sample Database](https://dev.mysql.com/doc/sakila/en/sakila-installation.html)
 
 - Menggunakan database *sakila*
 ```bash
