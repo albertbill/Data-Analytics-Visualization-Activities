@@ -10,4 +10,4 @@ Soal:
 Jawaban:
 - 💪 [[**Exercises 1**] Membuat beberapa query pada database *world* menggunakan MySql](modules/part-2/soal1-mysql-world-db.md)
 - 💪 [[**Exercises 2**] Menampilkan infografis ASEAN](modules/part-2/soal2-asean.py)
-- 💪 [[**Exercises 3**] Menampilkan Harga Historis Saham Provider Telco Indonesia](modules/part-2/soal3)
+- 💪 [[**Exercises 3**] Menampilkan Harga Historis Saham Provider Telco Indonesia](modules/part-2/soal-3)
