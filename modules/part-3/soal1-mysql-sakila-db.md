@@ -39,27 +39,27 @@ mysql> SELECT category, COUNT(category) AS jumlahMovie, AVG(price) AS rataHargaS
     1. Membuat tabel *rating_film*
     ```bash
     mysql> CREATE TABLE rating_film (
-    -> rating VARCHAR(50),
-    -> keterangan VARCHAR(50)
-    -> );
+        -> rating VARCHAR(50),
+        -> keterangan VARCHAR(50)
+        -> );
     ```
     2. Memasukkan data ke tabel *rating_film*
     ```bash
     mysql> INSERT INTO rating_film VALUE
-    -> ("G", "General Audiences"),
-    -> ("PG", "Parental Guidance Suggested"),
-    -> ("PG-13", "Parental Guidances for Children Under 13"),
-    -> ("R", "Restricted"),
-    -> ("NC-17", "No Children Under 17 Admitted");
+        -> ("G", "General Audiences"),
+        -> ("PG", "Parental Guidance Suggested"),
+        -> ("PG-13", "Parental Guidances for Children Under 13"),
+        -> ("R", "Restricted"),
+        -> ("NC-17", "No Children Under 17 Admitted");
     ```
     3. Menampilkan rating film, keterangan rating film & total film tiap rating
     ```bash
     mysql> SELECT film.rating AS rating, rating_film.keterangan AS keterangan, COUNT(film.rating) AS jumlahMovie
-    -> FROM film
-    -> JOIN rating_film
-    -> ON film.rating = rating_film.rating
-    -> GROUP BY film.rating
-    -> ORDER BY rating;
+        -> FROM film
+        -> JOIN rating_film
+        -> ON film.rating = rating_film.rating
+        -> GROUP BY film.rating
+        -> ORDER BY rating;
     ```
 4. Menampilkan daftar **10 aktor/aktris yang paling banyak membintangi film**.
 ```bash
