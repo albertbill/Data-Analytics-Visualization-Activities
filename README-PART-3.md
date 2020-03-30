@@ -9,3 +9,4 @@ Soal:
 
 Jawaban:
 - 💪 [[**Exercises 1**] Membuat beberapa query pada database *sakila* menggunakan MySql](modules/part-3/soal1-mysql-sakila-db.md)
+- 💪 [[**Exercises 2**] Mengolah data *profesi* CSV menggunakan bahasa python](modules/part-3/soal-2)
