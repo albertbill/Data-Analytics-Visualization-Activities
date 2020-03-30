@@ -106,3 +106,38 @@ mysql> SELECT film.title, category.name AS category
     -> AND category.name = "Sci-Fi"
     -> ORDER BY film.title;
 ```
+
+7. Menampilkan daftar **10 aktor/aktris yang paling banyak membintangi film horror**.
+```bash
+mysql> SELECT actor.actor_id, actor.first_name, actor.last_name, COUNT(film.film_id) AS jumlah_movie
+    -> FROM category
+    -> JOIN film_category
+    -> ON category.category_id = film_category.category_id
+    -> JOIN film
+    -> ON film_category.film_id = film.film_id
+    -> JOIN film_actor
+    -> ON film.film_id = film_actor.film_id
+    -> JOIN actor
+    -> ON film_actor.actor_id = actor.actor_id
+    -> WHERE category.name = "Horror"
+    -> GROUP BY actor.actor_id
+    -> ORDER BY jumlah_movie DESC
+    -> LIMIT 10;
+```
+
+8. Menampilkan daftar **judul film horror yang pernah dibintangi oleh Julia McQueen**.
+```bash
+mysql> SELECT film.title, category.name AS category
+    -> FROM category
+    -> JOIN film_category
+    -> ON category.category_id = film_category.category_id
+    -> JOIN film
+    -> ON film_category.film_id = film.film_id
+    -> JOIN film_actor
+    -> ON film.film_id = film_actor.film_id
+    -> JOIN actor
+    -> ON film_actor.actor_id = actor.actor_id
+    -> WHERE actor.actor_id = 27
+    -> AND category.name = "Horror"
+    -> ORDER BY film.title;
+```
