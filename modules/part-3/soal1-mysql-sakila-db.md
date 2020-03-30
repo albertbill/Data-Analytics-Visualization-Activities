@@ -89,3 +89,20 @@ mysql> SELECT category.name, COUNT(film.title) AS jumlah_movie
     -> WHERE actor.actor_id = 107
     -> GROUP BY category.name;
 ```
+
+6. Menampilkan daftar **judul film sci-fi yang pernah dibintangi oleh Gina Degeneres**.
+```bash
+mysql> SELECT film.title, category.name AS category
+    -> FROM category
+    -> JOIN film_category
+    -> ON category.category_id = film_category.category_id
+    -> JOIN film
+    -> ON film_category.film_id = film.film_id
+    -> JOIN film_actor
+    -> ON film.film_id = film_actor.film_id
+    -> JOIN actor
+    -> ON film_actor.actor_id = actor.actor_id
+    -> WHERE actor.actor_id = 107
+    -> AND category.name = "Sci-Fi"
+    -> ORDER BY film.title;
+```
