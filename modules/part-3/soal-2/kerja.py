@@ -5,8 +5,8 @@ df_profesi = pd.read_csv("Dataset Kerja/profesi.csv", delimiter="|")
 
 # -------------------------------------Soal Nomor 1----------------------------------------
 profesi = df_profesi["occupation"].unique()
-print(profesi)
 print(len(profesi))
+print(profesi)
 # -----------------------------------------------------------------------------------------
 
 # -------------------------------------Soal Nomor 2----------------------------------------
