@@ -73,3 +73,19 @@ mysql> SELECT actor.actor_id, actor.first_name, actor.last_name, COUNT(film.film
     -> ORDER BY jumlah_movie DESC
     -> LIMIT 10;
 ```
+
+5. Menampilkan daftar **kategori film beserta jumlah film yang pernah dibintangi oleh Gina Degeneres**.
+```bash
+mysql> SELECT category.name, COUNT(film.title) AS jumlah_movie
+    -> FROM category
+    -> JOIN film_category
+    -> ON category.category_id = film_category.category_id
+    -> JOIN film
+    -> ON film_category.film_id = film.film_id
+    -> JOIN film_actor
+    -> ON film.film_id = film_actor.film_id
+    -> JOIN actor
+    -> ON film_actor.actor_id = actor.actor_id
+    -> WHERE actor.actor_id = 107
+    -> GROUP BY category.name;
+```
